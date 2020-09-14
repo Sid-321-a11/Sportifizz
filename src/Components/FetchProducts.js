@@ -2,25 +2,41 @@ import React, { Component } from 'react'
 
 
 class FetchProducts extends Component{
-  state = {
-    loading: true,
-    person: null
-  };
-  async componentDidMount(){
-    const url = "/core/"
-    const response = await fetch(url)
-    const data = await response.json()
-    this.setState({person:data, loading:false});
-  }
+  constructor(props) {
+		super(props);
+		this.state = {
+      isLoaded:false,
+			products: [],
+		};
+	}
+
+	async componentDidMount() {
+		await fetch("http://localhost:8000/api/products/")
+			.then(response => response.json())
+			.then(data => {
+				this.setState({
+          isLoaded:true,
+          products: data,
+        })
+			});
+	}
   render(){
-    return(
-      <div>
-        {
-          this.state.loading ? <div>Loading...</div>:
-          <div>{this.state.person}</div>
-        }
-      </div>
-    );
+
+    var { isLoaded, products } = this.state;
+    if(!isLoaded){
+      return <div>Loading...</div>
+    }
+    else{
+      return(
+        <div className='row'>{
+            products.map(item => (
+              <div className='col-md-4 center'>
+                <img src={item.image} alt={item.image}></img>
+              </div>
+          ))
+        }</div>
+      );
+    }
   }
 }
 export default FetchProducts;
