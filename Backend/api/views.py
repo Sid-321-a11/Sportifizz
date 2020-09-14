@@ -21,14 +21,15 @@ def DetailProduct(request,pk):
     ProductsResponse = ProductSerializer(product, many=False)
     return Response(ProductsResponse.data)
 
-
+@csrf_exempt
 @api_view(['POST'])
-def CreateProductView(request,pk):
-    serializer = ProductSerializer(data=request.data)
-    if serializer.is_valid():
-        serializer.save()
-        return Response(serializer.data)
-    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+def CreateProductView(request):
+    if request.method == 'POST':
+        serializer = ProductSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['DELETE'])
 def DeleteProductView(request,pk):
