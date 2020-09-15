@@ -1,18 +1,17 @@
 import React from 'react';
-import {Route, Switch} from "react-router-dom";
-import NavbarC from './Components/Navbar.js'
-import UpperNav from './Components/UpperNav.js'
-import Body from './Components/Body.js'
+import {BrowserRouter,  Route, Switch} from "react-router-dom";
+import Navbar from "./Components/Navbar";
+
+
 function App() {
   return (
+    <BrowserRouter>
     <Switch>
-      <Route>
-        <UpperNav />
-        <NavbarC />
-        <Body />
+      <Route path="/" component="home">
+       <Navbar />
       </Route >
     </Switch>
-
+    </BrowserRouter>
   );
 }
 
