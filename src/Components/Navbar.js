@@ -14,6 +14,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import "./Navbar.css";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
+      width: '10000px'
     },
   },
   search: {
@@ -53,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   inputRoot: {
-    color: 'inherit',
+    color: 'secondary',
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
