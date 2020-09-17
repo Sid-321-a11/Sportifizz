@@ -1,0 +1,7 @@
+.MuiAppBar-colorPrimary{
+    background-color: black !important;
+}
+.MuiTypography-root{
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 30px !important;
+}
