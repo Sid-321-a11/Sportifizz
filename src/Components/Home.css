@@ -1,4 +1,16 @@
 
 .carousel{
   width: 100% !important;
+  display: flex !important;
+}
+.b{
+  margin-top: 100px;
+ text-align: center;
+
+}
+.home-row{
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
 }

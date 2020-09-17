@@ -1,6 +1,7 @@
 import React from 'react'
 import {Carousel} from "react-bootstrap";
 import './Home.css'
+import Product from './Product';
 function Home() {
     return (
         <div className="car">
@@ -8,7 +9,7 @@ function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Panorama_from_poonhill-2019-BJ.jpg"
+            src="https://preview.redd.it/jq55u00zkqyy.jpg?width=960&crop=smart&auto=webp&s=7dcf542bcc3c6cb32ddf0839ff27d8ff693353b6"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -19,7 +20,7 @@ function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+            src="https://i.ytimg.com/vi/FCIvXPT8m5Y/maxresdefault.jpg"
             alt="Third slide"
           />
 
@@ -31,7 +32,7 @@ function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
+            src="https://assets.thehansindia.com/hansindia-bucket/2019/01/rohit_3073.jpg?quality=60&w=100&dpr=1.0"
             alt="Third slide"
           />
 
@@ -41,6 +42,68 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+
+    <p className="b">Bats</p>
+    <div className="home-row">
+
+    </div>
+    <div className="home-row">
+    <Product
+    id="1"
+    title="The lean startup:how innovation starts"
+    price={4000}
+    rating={5}
+    image="https://nb.scene7.com/is/image/NB/0dcplebo_nb_03_i?$pdpflexf2$&wid=440&hei=440&qlt=35&fmt=webp"
+    />
+    
+    <Product
+    id="1"
+    title="The lean startup:how innovation starts"
+    price={4000}
+    rating={5}
+    image="https://nb.scene7.com/is/image/NB/0dcplebo_nb_03_i?$pdpflexf2$&wid=440&hei=440&qlt=35&fmt=webp"
+    />
+    <Product
+    id="1"
+    title="The lean startup:how innovation starts"
+    price={4000}
+    rating={5}
+    image="https://nb.scene7.com/is/image/NB/0dcplebo_nb_03_i?$pdpflexf2$&wid=440&hei=440&qlt=35&fmt=webp"
+    />
+    
+    
+    
+  
+    </div>
+ <div className="home-row">
+ 
+ <Product
+    id="1"
+    title="The lean startup:how innovation starts"
+    price={4000}
+    rating={5}
+    image="https://nb.scene7.com/is/image/NB/0dcplebo_nb_03_i?$pdpflexf2$&wid=440&hei=440&qlt=35&fmt=webp"
+    />
+    <Product
+    id="1"
+    title="The lean startup:how innovation starts"
+    price={4000}
+    rating={5}
+    image="https://nb.scene7.com/is/image/NB/0dcplebo_nb_03_i?$pdpflexf2$&wid=440&hei=440&qlt=35&fmt=webp"
+    />
+    <Product
+    id="1"
+    title="The lean startup:how innovation starts"
+    price={4000}
+    rating={5}
+    image="https://nb.scene7.com/is/image/NB/0dcplebo_nb_03_i?$pdpflexf2$&wid=440&hei=440&qlt=35&fmt=webp"
+    />
+    
+ 
+ </div>
+
+
+
         </div>
     )
 }
