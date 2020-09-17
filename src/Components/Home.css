@@ -1,3 +1,4 @@
-.carousel-item{
-    display: flex;
+
+.carousel{
+  width: 100% !important;
 }
