@@ -33,23 +33,23 @@ function Navbar() {
           </Link>
          <Link to="/">
             <div className="logo">
-              <img src="https://ci4.googleusercontent.com/proxy/Lmem82xQNRweQqxpQJvVLjEf7rAdfVYvj8E6CNM3yglWQ9MxhnNQbh_4A2BCzJuGdKR8YrLPRQDPNokQXoGkarXGGKPMRY3eOEHjkKL9ulIqxQQAhaSGFCuQSJJCRVO1e4Uodlaj0VloKoGKHkgKDvOQbHBc35hc=s0-d-e1-ft#https://www.freelogodesign.org/file/app/client/thumb/cbf83b03-4e07-4b10-85fa-6dbdb3b0801e_200x200.png" alt=""/>
+              <h2>Sportifizz</h2>
             </div>
           </Link>
 
           <div className="header-search">
-            <input type="text"   className="search" placeholder="Search here" />
+            <input type="text" className="search" placeholder="Search here" />
             <SearchIcon className="search-icon" />
           </div>
           <Link to="/loginpage">
-            <Button className="btn" variant="contained">LOGIN</Button>
+            <p className="btn-login" variant="contained">Login</p>
           </Link>
 
           <Link to="/">
             <ShoppingBasketIcon className="bas" />
           </Link>
         </div>
-        
+
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>

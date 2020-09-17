@@ -9,7 +9,7 @@ class FetchProducts extends Component{
 			products: [],
 		};
 	}
-
+  
 	async componentDidMount() {
 		await fetch("http://localhost:8000/api/products/")
 			.then(response => response.json())
