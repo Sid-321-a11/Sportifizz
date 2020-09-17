@@ -41,15 +41,15 @@ function Navbar() {
             <input type="text"   className="search" placeholder="Search here" />
             <SearchIcon className="search-icon" />
           </div>
-      <Link to="/loginpage">
-      <Button className="btn" variant="contained">LOGIN</Button>
-      </Link>
+          <Link to="/loginpage">
+            <Button className="btn" variant="contained">LOGIN</Button>
+          </Link>
 
-      <Link to="/">
-      <ShoppingBasketIcon className="bas" />
-      </Link>
-
+          <Link to="/">
+            <ShoppingBasketIcon className="bas" />
+          </Link>
         </div>
+        
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
