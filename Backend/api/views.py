@@ -7,7 +7,6 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
 
-@csrf_exempt
 @api_view(['GET'])
 def ListProducts(request):
     if request.method == 'GET':
@@ -21,7 +20,7 @@ def DetailProduct(request,pk):
     ProductsResponse = ProductSerializer(product, many=False)
     return Response(ProductsResponse.data)
 
-@csrf_exempt
+
 @api_view(['POST'])
 def CreateProductView(request):
     if request.method == 'POST':
