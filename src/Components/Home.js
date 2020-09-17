@@ -1,15 +1,24 @@
 import React from 'react'
 import {Carousel} from "react-bootstrap";
 import './Home.css'
+<<<<<<< HEAD
 import Product from './Product';
+=======
+import './../index.css'
+import FetchProducts from './FetchProducts.js'
+>>>>>>> 834ad820b7bc77f5a7dde65606733f97390f8822
 function Home() {
     return (
-        <div className="car">
+      <div className="car">
         <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100"
+<<<<<<< HEAD
             src="https://preview.redd.it/jq55u00zkqyy.jpg?width=960&crop=smart&auto=webp&s=7dcf542bcc3c6cb32ddf0839ff27d8ff693353b6"
+=======
+            src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1467&q=80"
+>>>>>>> 834ad820b7bc77f5a7dde65606733f97390f8822
             alt="First slide"
           />
           <Carousel.Caption>
@@ -23,7 +32,6 @@ function Home() {
             src="https://i.ytimg.com/vi/FCIvXPT8m5Y/maxresdefault.jpg"
             alt="Third slide"
           />
-
           <Carousel.Caption>
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -42,6 +50,7 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+<<<<<<< HEAD
 
     <p className="b">Bats</p>
     <div className="home-row">
@@ -105,6 +114,10 @@ function Home() {
 
 
         </div>
+=======
+      <FetchProducts />
+    </div>
+>>>>>>> 834ad820b7bc77f5a7dde65606733f97390f8822
     )
 }
 export default Home

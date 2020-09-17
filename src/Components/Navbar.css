@@ -5,16 +5,16 @@
     justify-content: start;
     align-items: center;
   }
-  
-  .menu-bars {
+
+.menu-bars {
     margin-left: 10px;
     margin-right: 10px;
     padding-bottom: 20px;
     font-size: 2rem;
     background: none;
-  }
-  
-  .nav-menu {
+}
+
+.nav-menu {
     background-color: #060b26;
     width: 250px;
     height: 100vh;
@@ -24,13 +24,14 @@
     top: 0;
     left: -100%;
     transition: 850ms;
-  }
-  
+    z-index:2;
+}
+
   .nav-menu.active {
     left: 0;
     transition: 350ms;
   }
-  
+
   .nav-text {
     display: flex;
     justify-content: start;
@@ -39,7 +40,7 @@
     list-style: none;
     height: 60px;
   }
-  
+
   .nav-text a {
     text-decoration: none;
     color: #f5f5f5;
@@ -51,15 +52,15 @@
     padding: 0 16px;
     border-radius: 4px;
   }
-  
+
   .nav-text a:hover {
     background-color: #1a83ff;
   }
-  
+
   .nav-menu-items {
     width: 100%;
   }
-  
+
   .navbar-toggle {
     background-color: #060b26;
     width: 100%;
@@ -68,7 +69,7 @@
     justify-content: start;
     align-items: center;
   }
-  
+
   span {
     margin-left: 16px;
   }
@@ -76,40 +77,28 @@
       display: flex;
      flex: 1;
       align-items: center;
-  
-  }
-
-  .logo{
-  object-fit: contain;
-display: flex;
-height: 80px;
-margin-left: 40px;
-margin-right: 40px;
-padding-bottom: 10px;
 
   }
-  .search-icon{
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+    margin: 0px 2% 0px 2%;
+}
+.search-icon{
     background-color: orange;
-    height:41px !important;
-    margin-bottom: 10px;
-  }
+    height: 40px !important;
+}
 .search{
-  display: flex;
-  width: 70%;
-  margin-left: 20px;
-  margin-bottom: 10px;
+
+  width:70%;
+  margin-left: calc(1em + .5vw);
   padding: 20px;
   height: 12px;
   border: none;
 }
 
-
 .btn{
-
-  display: flex;
-  align-items: center;
- margin-right: 150px !important;
- margin-bottom: 10px !important;
+  color: white !important;
 }
 
 .bas{

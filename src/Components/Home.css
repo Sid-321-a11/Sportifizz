@@ -1,7 +1,19 @@
-
+body{
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .carousel{
+  margin-top: 20px;
   width: 100% !important;
+<<<<<<< HEAD
   display: flex !important;
+=======
+  z-index:1;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+>>>>>>> 834ad820b7bc77f5a7dde65606733f97390f8822
 }
 .b{
   margin-top: 100px;
