@@ -6,14 +6,7 @@ body{
 .carousel{
   margin-top: 20px;
   width: 100% !important;
-<<<<<<< HEAD
   display: flex !important;
-=======
-  z-index:1;
-  text-align: center;
-  margin: auto;
-  justify-content: center;
->>>>>>> 834ad820b7bc77f5a7dde65606733f97390f8822
 }
 .b{
   margin-top: 100px;
